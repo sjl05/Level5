@@ -81,7 +81,7 @@ print("Let's play some Rock, Paper, Scissors")
 
 while True:
     num_rounds = int(input("How many rounds would you like to play: "))
-    if num_rounds % 2 != 0:
+    if num_rounds % 2 == 0:
         print("You must put an odd number of games to play")
     elif num_rounds <= 2:
         print("Number of rounds must be positive")
@@ -89,7 +89,7 @@ while True:
         sure = input("Are you sure? (yes/no) ")
         if sure == "yes" or sure == "Yes":
             break
-    elif num_rounds % 2 == 0:
+    elif num_rounds % 2 != 0:
         break
 
 while num_rounds > round_count_current:
